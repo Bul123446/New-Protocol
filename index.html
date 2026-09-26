@@ -456,6 +456,12 @@ td{font-family:var(--mono);font-variant-numeric:tabular-nums}
 </main>
 
 <script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./service-worker.js');
+  });
+}
+
 (function(){
 "use strict";
 
@@ -1395,6 +1401,7 @@ $('nt-date').value = today();
 boot();
 
 })();
+  
 </script>
 
 

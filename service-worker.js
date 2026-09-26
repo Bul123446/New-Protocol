@@ -1,5 +1,4 @@
-const CACHE_NAME = "reset-protocol-v1";
-
+const CACHE_NAME = "reset-protocol-v2";
 const ASSETS = [
   "./",
   "./index.html",
